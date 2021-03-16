@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/dallinjared/Box/BYU/2021 Winter/IS413/Projects/Project1/Project-1/Project-1.csproj": {}
+    "/Users/carterbeck/Documents/School/IS 413/Assignments/GroupProject/Project1/Project-1/Project-1.csproj": {}
   },
   "projects": {
-    "/Users/dallinjared/Box/BYU/2021 Winter/IS413/Projects/Project1/Project-1/Project-1.csproj": {
+    "/Users/carterbeck/Documents/School/IS 413/Assignments/GroupProject/Project1/Project-1/Project-1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dallinjared/Box/BYU/2021 Winter/IS413/Projects/Project1/Project-1/Project-1.csproj",
+        "projectUniqueName": "/Users/carterbeck/Documents/School/IS 413/Assignments/GroupProject/Project1/Project-1/Project-1.csproj",
         "projectName": "Project-1",
-        "projectPath": "/Users/dallinjared/Box/BYU/2021 Winter/IS413/Projects/Project1/Project-1/Project-1.csproj",
-        "packagesPath": "/Users/dallinjared/.nuget/packages/",
-        "outputPath": "/Users/dallinjared/Box/BYU/2021 Winter/IS413/Projects/Project1/Project-1/obj/",
+        "projectPath": "/Users/carterbeck/Documents/School/IS 413/Assignments/GroupProject/Project1/Project-1/Project-1.csproj",
+        "packagesPath": "/Users/carterbeck/.nuget/packages/",
+        "outputPath": "/Users/carterbeck/Documents/School/IS 413/Assignments/GroupProject/Project1/Project-1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/dallinjared/.config/NuGet/NuGet.Config"
+          "/Users/carterbeck/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -37,6 +37,22 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -55,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.101/RuntimeIdentifierGraph.json"
         }
       }
     }

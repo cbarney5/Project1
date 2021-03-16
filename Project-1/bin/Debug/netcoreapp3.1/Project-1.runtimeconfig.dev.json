@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/Users/dallinjared/.dotnet/store/|arch|/|tfm|",
-      "/Users/dallinjared/.nuget/packages"
+      "/Users/carterbeck/.dotnet/store/|arch|/|tfm|",
+      "/Users/carterbeck/.nuget/packages"
     ]
   }
 }

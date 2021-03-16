@@ -6,16 +6,20 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Project_1.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Project_1
 {
     public class Startup
     {
+        private IConfiguration _configuration { get; }
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            _configuration = configuration;
         }
 
         public IConfiguration Configuration { get; }
@@ -24,6 +28,10 @@ namespace Project_1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDbContext<SignUpContext>(options =>
+            {
+                options.UseSqlite(_configuration["ConnectionStrings:SignUpConnection"]);
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
